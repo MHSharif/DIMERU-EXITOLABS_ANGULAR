@@ -1,0 +1,13 @@
+.navbar {
+  
+
+  bottom: 0px;
+  /* position: -webkit-sticky; */
+  position: fixed;
+  background-color: white;
+  padding: 40px;
+  justify-content: space-between;
+
+  /* flex: 1 1 auto; */
+
+}

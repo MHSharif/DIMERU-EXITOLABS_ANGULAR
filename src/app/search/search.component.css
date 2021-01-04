@@ -1,0 +1,13 @@
+.center {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.margintop {
+  margin-top: 100px;
+}
+.example-card {
+  max-width: 800px;
+  margin-bottom: 20px;
+
+}

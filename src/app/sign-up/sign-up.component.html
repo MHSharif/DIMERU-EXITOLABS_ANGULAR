@@ -1,0 +1,52 @@
+<div class="mar">
+  <!-- <p class="center">
+        <mat-form-field appearance="outline">
+          <mat-label>Name</mat-label>
+          <input  matInput placeholder="Your Name Here"  type="text" [(ngModel)]="registerUserData.name" name="name"/>
+          <mat-icon matSuffix color="primary">Name</mat-icon>
+        </mat-form-field>
+      </p> -->
+
+  {{ registerUserData | json }}
+
+  <p class="center">
+    <button mat-stroked-button color="primary">Sign Up using GOOGLE</button>
+  </p>
+  <p class="center">_________________ or _________________</p>
+  <p class="center">create a new dimeru account</p>
+
+
+  <p class="center">
+    <mat-form-field appearance="outline">
+      <mat-label>E-Mail</mat-label>
+      <input
+        matInput
+        placeholder="Your Email Here"
+        type="text"
+        [(ngModel)]="registerUserData.email"
+        name="email"
+      />
+      <mat-icon matSuffix color="primary">email</mat-icon>
+    </mat-form-field>
+  </p>
+  <p class="center">
+    <mat-form-field appearance="outline">
+      <mat-label>Password</mat-label>
+      <input
+        matInput
+        placeholder="Password"
+        type="password"
+        [(ngModel)]="registerUserData.pass"
+        name="pass"
+      />
+      <mat-icon matSuffix color="primary">security</mat-icon>
+    </mat-form-field>
+  </p>
+
+  <p class="center">
+    <button mat-stroked-button (click)="registerUser()" color="primary">
+      Sign Up
+    </button>
+  </p>
+</div>
+{{registerUserData|json}}

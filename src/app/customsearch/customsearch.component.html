@@ -1,0 +1,56 @@
+<p class="margintop">customsearch works!</p>
+{{link}}
+
+<p class="center">
+    <mat-form-field appearance="fill">
+      <mat-label>Job Title</mat-label>
+      <input matInput [(ngModel)]="search.title" />
+    </mat-form-field>
+  </p>
+  <p class="center">
+    <mat-form-field appearance="fill">
+      <mat-label>Job Location</mat-label>
+      <input matInput [(ngModel)]="search.location" />
+    </mat-form-field>
+  </p>
+  <p class="center">
+    <mat-form-field appearance="fill">
+      <mat-label>Job Location</mat-label>
+      <input matInput [(ngModel)]="search.location" />
+    </mat-form-field>
+  </p>
+  <p class="center">
+    <mat-form-field appearance="fill">
+      <mat-label>Search by any Company</mat-label>
+      <input matInput [(ngModel)]="search.company" />
+    </mat-form-field>
+  </p>
+  <p class="center">
+    <mat-form-field appearance="fill">
+      <mat-label>Job Type Remote/Office</mat-label>
+      <input matInput [(ngModel)]="search.type" />
+    </mat-form-field>
+  </p>
+  <p class="center">
+    <mat-form-field appearance="fill">
+      <mat-label>Search By Skill</mat-label>
+      <input matInput [(ngModel)]="search.skill" />
+    </mat-form-field>
+  </p>
+  <p class="center">
+    <mat-form-field appearance="fill">
+      <mat-label>Search by Designation</mat-label>
+      <input matInput [(ngModel)]="search.designation" />
+    </mat-form-field>
+  </p>
+  <p class="center">
+    <button
+      mat-raised-button
+      routerLink="/search"
+      color="primary"
+      class="marginbottom"
+      (click)="csearch()"
+    >
+      Search
+    </button>
+  </p>

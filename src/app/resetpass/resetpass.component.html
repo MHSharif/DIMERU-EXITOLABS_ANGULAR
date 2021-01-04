@@ -1,0 +1,13 @@
+<div class="mar">
+    <p class="center">
+      <mat-form-field appearance="outline">
+        <mat-label>E-Mail</mat-label>
+        <input matInput type="email"  placeholder="Your Email Here" [(ngModel)]="user.email" name="email" required/>
+        <mat-icon matSuffix color="primary">email</mat-icon>
+      </mat-form-field>
+    </p>
+    
+    <p class="center"><button mat-stroked-button (click)="openDialog()" (click)="resetemail()" color="primary">Request Password Reset</button></p>
+    </div>
+
+    

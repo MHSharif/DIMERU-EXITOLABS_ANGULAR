@@ -1,0 +1,106 @@
+<div *ngIf="pid===pidL">
+
+<p>pages works!</p>
+
+<div class="center">
+  <img src="{{ avatarlink }}" alt="Avatar" />
+</div>
+{{pid}}
+
+<div class="center">
+  <button mat-raised-button color="primary" routerLink="/upload">
+    Change Profile Picture
+  </button>
+</div>
+
+<div class="center">
+  <button mat-raised-button color="primary" routerLink="/editpage">
+    Edit Page/ Company Info
+  </button>
+</div>
+
+<p class="example-form" class="center">
+  <mat-form-field class="example-full-width">
+    <mat-label>Leave a comment</mat-label>
+    <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+  </mat-form-field>
+  <button mat-raised-button color="primary">Post</button>
+</p>
+<h2 class="center">POst A Job</h2>
+<p class="example-form" class="center">
+  <mat-form-field class="example-full-width">
+    <mat-label>Post name</mat-label>
+    <textarea
+      matInput
+      placeholder="Post details"
+      [(ngModel)]="jobpost.title"
+    ></textarea>
+  </mat-form-field>
+</p>
+<p class="example-form" class="center">
+  <mat-form-field class="example-full-width">
+    <mat-label>Designation</mat-label>
+    <textarea
+      matInput
+      placeholder="Salery"
+      [(ngModel)]="jobpost.designation"
+    ></textarea>
+  </mat-form-field>
+</p>
+<p class="example-form" class="center">
+  <mat-form-field class="example-full-width">
+    <mat-label>Requirments</mat-label>
+    <textarea
+      matInput
+      placeholder="Requirments fo the job"
+      [(ngModel)]="jobpost.req"
+    ></textarea>
+  </mat-form-field>
+</p>
+<p class="example-form" class="center">
+  <mat-form-field class="example-full-width">
+    <mat-label>Location</mat-label>
+    <textarea
+      matInput
+      placeholder="Location"
+      [(ngModel)]="jobpost.loc"
+    ></textarea>
+  </mat-form-field>
+</p>
+<p class="example-form" class="center">
+  <mat-form-field class="example-full-width">
+    <mat-label>Type</mat-label>
+    <textarea
+      matInput
+      placeholder="Location"
+      [(ngModel)]="jobpost.type"
+    ></textarea>
+  </mat-form-field>
+</p>
+<p class="center">
+  <button mat-raised-button (click)="postthisjob()" color="primary">
+    Post a job
+  </button>
+</p>
+
+<h2 class="centerl">Name: {{ pagedata }}</h2>
+<h2 class="centerl">Bio: {{ pagedata }}</h2>
+<h2 class="centerl">Location: {{ pagedata }}</h2>
+
+<div class="margin">a</div>
+</div>
+<!-- ----------------------------------------------------------------------------------------------------------------------------- -->
+
+
+<div class="center">
+  <img src="{{ avatarlink }}" alt="Avatar" />
+</div>
+<p class="center">
+  <button mat-raised-button color="primary" (click)="follow()">
+    Follow
+  </button>
+</p>
+
+<h2 class="centerl">Name: {{ pagedata }}</h2>
+<h2 class="centerl">Bio: {{ pagedata }}</h2>
+<h2 class="centerl">Location: {{ pagedata }}</h2>

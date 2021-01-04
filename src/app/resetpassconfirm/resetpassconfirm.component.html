@@ -1,0 +1,12 @@
+<div class="center"><mat-form-field appearance="outline">
+  <input matInput placeholder="New Password" type="text" [(ngModel)]="user.password" name="password" />
+</mat-form-field>
+
+
+</div>
+<p class="center">
+    <button mat-stroked-button (click)="resetpassconfirm()" color="primary">
+      Confirm New Password
+    </button>
+  </p>
+{{user|json}}

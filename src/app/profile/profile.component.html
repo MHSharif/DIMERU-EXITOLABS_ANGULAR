@@ -1,0 +1,171 @@
+<div *ngIf="proid === proidL">
+  <div class="center">
+    <img src="{{ avatarlink }}" alt="Avatar" />
+  </div>
+
+  <div class="center">
+    <button mat-raised-button color="primary" routerLink="/upload">
+      Change Profile Picture
+    </button>
+  </div>
+
+  <div class="center">
+    <button mat-raised-button color="primary" routerLink="/editprofile">
+      Edit Profile Info
+    </button>
+  </div>
+
+  <div class="center">
+    <button mat-raised-button color="primary" routerLink="/changepassword">
+      Change Password
+    </button>
+  </div>
+  <div class="center">
+    <button mat-raised-button color="primary" routerLink="/createpage">
+      Create A Page
+    </button>
+  </div>
+  <div class="center">
+    <button mat-raised-button color="primary" routerLink="/pages/{{ PageID }}">
+      Show My Pages
+    </button>
+  </div>
+
+  <h1 class="center">PERSONAL INFORMATION</h1>
+  <h2 class="centerl">Name: {{ profiledata.name }}</h2>
+  <h2 class="centerl">Father Name: {{ profiledata.FatherName }}</h2>
+  <h2 class="centerl">Mother Name: {{ profiledata.MotherName }}</h2>
+  <h2 class="centerl">Bio: {{ profiledata.bio }}</h2>
+  <h2 class="centerl">Birthday: {{ profiledata.BirthDay }}</h2>
+  <h2 class="centerl">phone: {{ profiledata.phone }}</h2>
+  <h2 class="centerl">Email : {{ profiledata.email }}</h2>
+  <h2 class="centerl">Phone: {{ profiledata.phone }}</h2>
+  <h2 class="centerl">Present Address : {{ profiledata.PresAddress }}</h2>
+  <h2 class="centerl">Permanent Address : {{ profiledata.PermAddress }}</h2>
+  <h2 class="centerl">NID : {{ profiledata.NID }}</h2>
+  <h2 class="centerl">Summery :{{ profiledata.summery }}</h2>
+  <h2 class="centerl">Objective : {{ profiledata.objective }}</h2>
+  <br />
+  <h1 class="center">EDUCATION INFORMATION</h1>
+
+  <h2 class="centerl">
+    University :
+    {{ profiledata.university[0].UniName }}
+    <mat-icon *ngIf="profiledata.university[0].isApproved">verified</mat-icon>
+  </h2>
+  <h2 class="centerl">
+    Department : {{ profiledata.university[0].Department }}
+  </h2>
+  <h2 class="centerl">Degree : {{ profiledata.university[0].Degree }}</h2>
+  <h2 class="centerl">Session : {{ profiledata.university[0].Session }}</h2>
+
+
+
+    <h2 class="centerl">College : {{ profiledata.secondary[0].Name }}</h2>
+    <h2 class="centerl">Grade : {{ profiledata.secondary[0].Grade }}</h2>
+    <h2 class="centerl">Year : {{ profiledata.secondary[0].year }}</h2>
+
+
+
+  <h2 class="centerl">School : {{profiledata.secondary[1].Name }}</h2>
+  <h2 class="centerl">Grade : {{ profiledata.secondary[1].Grade }}</h2>
+  <h2 class="centerl">Year : {{profiledata.secondary[1].year }}</h2>
+  <br />
+  <h1 class="center">WORKING EXPERIENCE</h1>
+
+  <h2 class="centerl">
+    Current Work Place :
+    {{ profiledata.workplace[0].name }}
+    <mat-icon *ngIf="profiledata.workplace[0].isApproved"> verified</mat-icon>
+  </h2>
+  <h2 class="centerl">designation : {{ profiledata.workplace[0].designation }}</h2>
+  <h2 class="centerl">Department : {{ profiledata.workplace[0].department }}</h2>
+  <h2 class="centerl">Type : {{ profiledata.workplace[0].type }}</h2>
+
+  <!-- <h2 class="centerl">EX Work Place : {{ profiledata.exWP.name }}</h2>
+  <h2 class="centerl">designation : {{ profiledata.exWP.designation }}</h2>
+  <h2 class="centerl">Department : {{ profiledata.exWP.department }}</h2>
+  <h2 class="centerl">Type : {{ profiledata.exWP.type }}</h2> -->
+
+  <h1 class="center">ACADEMIC AWARDS</h1>
+
+  <h2 class="centerl">
+    AWARDS: awards
+    <mat-icon> verified</mat-icon>
+  </h2>
+
+  <div class="margin">a</div>
+</div>
+<!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<div *ngIf="proid != proidL">
+  <div class="center">
+    <img src="{{ avatarlink }}" alt="Avatar" />
+  </div>
+
+  <div class="center">
+    <button mat-raised-button color="primary" (click)="follow()">Follow</button>
+  </div>
+  <h1 class="center">PERSONAL INFORMATION</h1>
+  <h2 class="centerl">Name: {{ profiledata.name }}</h2>
+  <h2 class="centerl">Father Name: {{ profiledata.FatherName }}</h2>
+  <h2 class="centerl">Mother Name: {{ profiledata.MotherName }}</h2>
+  <h2 class="centerl">Bio: {{ profiledata.bio }}</h2>
+  <h2 class="centerl">Birthday: {{ profiledata.BirthDay }}</h2>
+  <h2 class="centerl">phone: {{ profiledata.phone }}</h2>
+  <h2 class="centerl">Email : {{ profiledata.email }}</h2>
+  <h2 class="centerl">Phone: {{ profiledata.phone }}</h2>
+  <h2 class="centerl">Present Address : {{ profiledata.PresAddress }}</h2>
+  <h2 class="centerl">Permanent Address : {{ profiledata.PermAddress }}</h2>
+  <h2 class="centerl">NID : {{ profiledata.NID }}</h2>
+  <h2 class="centerl">Summery :{{ profiledata.summery }}</h2>
+  <h2 class="centerl">Objective : {{ profiledata.objective }}</h2>
+  <br />
+  <h1 class="center">EDUCATION INFORMATION</h1>
+
+  <h2 class="centerl">
+    University :
+    {{ profiledata.university[0].UniName }}
+    <mat-icon *ngIf="profiledata.university[0].isApproved">verified</mat-icon>
+  </h2>
+  <h2 class="centerl">
+    Department : {{ profiledata.university[0].Department }}
+  </h2>
+  <h2 class="centerl">Degree : {{ profiledata.university[0].Degree }}</h2>
+  <h2 class="centerl">Session : {{ profiledata.university[0].Session }}</h2>
+
+
+
+    <h2 class="centerl">College : {{ profiledata.secondary[0].Name }}</h2>
+    <h2 class="centerl">Grade : {{ profiledata.secondary[0].Grade }}</h2>
+    <h2 class="centerl">Year : {{ profiledata.secondary[0].year }}</h2>
+
+
+
+  <h2 class="centerl">School : {{profiledata.secondary[1].Name }}</h2>
+  <h2 class="centerl">Grade : {{ profiledata.secondary[1].Grade }}</h2>
+  <h2 class="centerl">Year : {{profiledata.secondary[1].year }}</h2>
+  <br />
+  <h1 class="center">WORKING EXPERIENCE</h1>
+
+  <h2 class="centerl">
+    Current Work Place :
+    {{ profiledata.workplace[0].name }}
+    <mat-icon *ngIf="profiledata.workplace[0].isApproved"> verified</mat-icon>
+  </h2>
+  <h2 class="centerl">designation : {{ profiledata.workplace[0].designation }}</h2>
+  <h2 class="centerl">Department : {{ profiledata.workplace[0].department }}</h2>
+  <h2 class="centerl">Type : {{ profiledata.workplace[0].type }}</h2>
+  <!-- <h2 class="centerl">EX Work Place : {{ profiledata.exWP.name }}</h2>
+  <h2 class="centerl">designation : {{ profiledata.exWP.designation }}</h2>
+  <h2 class="centerl">Department : {{ profiledata.exWP.department }}</h2>
+  <h2 class="centerl">Type : {{ profiledata.exWP.type }}</h2> -->
+
+  <h1 class="center">ACADEMIC AWARDS</h1>
+
+  <h2 class="centerl">
+    AWARDS: awards
+    <mat-icon> verified</mat-icon>
+  </h2>
+  <div class="margin">a</div>
+</div>

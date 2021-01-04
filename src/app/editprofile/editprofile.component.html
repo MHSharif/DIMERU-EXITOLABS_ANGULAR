@@ -1,0 +1,183 @@
+<div class="margintop">
+  <h1 class="center">PERSONAL INFORMATION</h1>
+  <p class="center">
+    <mat-form-field appearance="fill">
+      <mat-label>Name</mat-label>
+      <input matInput [(ngModel)]="UserProfile.name" />
+    </mat-form-field>
+  </p>
+
+  <p class="center">
+    <mat-form-field appearance="fill">
+      <mat-label>Father Name</mat-label>
+      <input matInput [(ngModel)]="UserProfile.FatherName" />
+    </mat-form-field>
+  </p>
+  <p class="center">
+    <mat-form-field appearance="fill">
+      <mat-label>Mother Name</mat-label>
+      <input matInput [(ngModel)]="UserProfile.MotherName" />
+    </mat-form-field>
+  </p>
+
+  <p class="center">
+    <mat-form-field appearance="fill">
+      <mat-label>Bio</mat-label>
+      <input matInput [(ngModel)]="UserProfile.bio" />
+    </mat-form-field>
+  </p>
+  <p class="center">
+    <mat-form-field appearance="fill">
+      <mat-label>Birth Day</mat-label>
+      <input matInput [(ngModel)]="UserProfile.BirthDay" />
+    </mat-form-field>
+  </p>
+  <p class="center">
+    <mat-form-field appearance="fill">
+      <mat-label>Phone</mat-label>
+      <input matInput [(ngModel)]="UserProfile.phone" />
+    </mat-form-field>
+  </p>
+
+  <p class="center">
+    <mat-form-field appearance="fill">
+      <mat-label>Present Address</mat-label>
+      <input matInput [(ngModel)]="UserProfile.PresAddress" />
+    </mat-form-field>
+  </p>
+  <p class="center">
+    <mat-form-field appearance="fill">
+      <mat-label>Permanent Address</mat-label>
+      <input matInput [(ngModel)]="UserProfile.PermAddress" />
+    </mat-form-field>
+  </p>
+
+  <p class="center">
+    <mat-form-field appearance="fill">
+      <mat-label>NID</mat-label>
+      <input matInput [(ngModel)]="UserProfile.NID" />
+    </mat-form-field>
+  </p>
+
+  <p class="center">
+    <mat-form-field appearance="fill">
+      <mat-label>Summary</mat-label>
+      <input matInput [(ngModel)]="UserProfile.summery" />
+    </mat-form-field>
+  </p>
+  <p class="center">
+    <mat-form-field appearance="fill">
+      <mat-label>Objective</mat-label>
+      <input matInput [(ngModel)]="UserProfile.objective" />
+    </mat-form-field>
+  </p>
+  <br />
+  <h1 class="center">Educational Information</h1>
+
+  <p class="center">
+    <mat-form-field appearance="fill">
+      <mat-label>University</mat-label>
+      <input matInput [(ngModel)]="UserProfile.university[0].UniName" />
+    </mat-form-field>
+  </p>
+  <p class="center">
+    <mat-form-field appearance="fill">
+      <mat-label>Department</mat-label>
+      <input matInput [(ngModel)]="UserProfile.university[0].Department" />
+    </mat-form-field>
+  </p>
+  <p class="center">
+    <mat-form-field appearance="fill">
+      <mat-label>Session</mat-label>
+      <input matInput [(ngModel)]="UserProfile.university[0].Session" />
+    </mat-form-field>
+  </p>
+  <p class="center">
+    <mat-form-field appearance="fill">
+      <mat-label>Degree</mat-label>
+      <input matInput [(ngModel)]="UserProfile.university[0].Degree" />
+    </mat-form-field>
+  </p>
+
+  <p class="center">
+    <mat-form-field appearance="fill">
+      <mat-label>College</mat-label>
+      <input matInput [(ngModel)]="UserProfile.secondary[0].Name" />
+    </mat-form-field>
+  </p>
+  <p class="center">
+    <mat-form-field appearance="fill">
+      <mat-label>Grade</mat-label>
+      <input matInput [(ngModel)]="UserProfile.secondary[0].Grade" />
+    </mat-form-field>
+  </p>
+  <p class="center">
+    <mat-form-field appearance="fill">
+      <mat-label>Year</mat-label>
+      <input matInput [(ngModel)]="UserProfile.secondary[0].year" />
+    </mat-form-field>
+  </p>
+  <br />
+  <h1 class="center">WORKING EXPERIENCE</h1>
+  <p class="center">
+    <mat-form-field appearance="fill">
+      <mat-label>Current Work Place</mat-label>
+      <input matInput [(ngModel)]="UserProfile.workplace[0].name" />
+    </mat-form-field>
+  </p>
+  <p class="center">
+    <mat-form-field appearance="fill">
+      <mat-label>Designation</mat-label>
+      <input matInput [(ngModel)]="UserProfile.workplace[0].designation" />
+    </mat-form-field>
+  </p>
+  <p class="center">
+    <mat-form-field appearance="fill">
+      <mat-label>Department</mat-label>
+      <input matInput [(ngModel)]="UserProfile.workplace[0].department" />
+    </mat-form-field>
+  </p>
+  <p class="center">
+    <mat-form-field appearance="fill">
+      <mat-label>Type</mat-label>
+      <input matInput [(ngModel)]="UserProfile.workplace[0].type" />
+    </mat-form-field>
+  </p>
+
+  <!-- <p class="center">
+    <mat-form-field appearance="fill">
+      <mat-label>Ex Work Place</mat-label>
+      <input matInput [(ngModel)]="UserProfile.exWP.name" />
+    </mat-form-field>
+  </p>
+  <p class="center">
+    <mat-form-field appearance="fill">
+      <mat-label>Designation</mat-label>
+      <input matInput [(ngModel)]="UserProfile.exWP.designation" />
+    </mat-form-field>
+  </p>
+  <p class="center">
+    <mat-form-field appearance="fill">
+      <mat-label>Department</mat-label>
+      <input matInput [(ngModel)]="UserProfile.exWP.department" />
+    </mat-form-field>
+  </p>
+  <p class="center">
+    <mat-form-field appearance="fill">
+      <mat-label>Type</mat-label>
+      <input matInput [(ngModel)]="UserProfile.exWP.type" />
+    </mat-form-field>
+  </p> -->
+
+  <p class="center">
+    <button
+      mat-raised-button
+      color="primary"
+      (click)="UpdateInfo()"
+      class="marginbottom"
+    >
+      Save Updated Info
+    </button>
+  </p>
+</div>
+{{ UserProfile | json }}

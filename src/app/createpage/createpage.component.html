@@ -1,0 +1,33 @@
+<p class="margintop">createpage works!</p>
+<p class="center">
+  <mat-form-field appearance="fill">
+    <mat-label>Company/Page Name</mat-label>
+    <input matInput  [(ngModel)]="createpage.name" />
+
+   
+  </mat-form-field>
+</p>
+
+<form class="center">
+  <mat-form-field appearance="fill">
+    <mat-label>Company Type</mat-label>
+    <mat-select [(ngModel)]="createpage.type" name="type">
+      <mat-option *ngFor="let type of types" [value]="type.value">
+        {{ type.viewValue }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</form>
+<p class="center">Selected Type: {{ createpage.type }}</p>
+
+<p class="center">
+  <mat-form-field appearance="fill">
+    <mat-label>Head</mat-label>
+    <input matInput  [(ngModel)]="createpage.head" />
+   
+  </mat-form-field>
+</p>
+
+<div class="center">
+  <button mat-raised-button (click)="createP()" color="primary">Submit</button>
+</div>
